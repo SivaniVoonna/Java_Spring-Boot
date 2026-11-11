@@ -153,6 +153,12 @@ public Object logExecutionTime(ProceedingJoinPoint joinPoint)
 
 !image.png
 
+<img width="1387" height="520" alt="image" src="https://github.com/user-attachments/assets/d2cf9115-0ccb-4559-8d26-08af76407e35" />
+
+<img width="1258" height="649" alt="image" src="https://github.com/user-attachments/assets/8bb5180e-09a3-4bb0-9d56-a5aeb4e863e8" />
+
+
+
 Important methods:
 
 | Method | Purpose |
