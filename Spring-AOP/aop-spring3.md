@@ -149,10 +149,6 @@ public Object logExecutionTime(ProceedingJoinPoint joinPoint)
 
 ### Reading Method Arguments with JoinPoints
 
-!image.png
-
-!image.png
-
 <img width="1387" height="520" alt="image" src="https://github.com/user-attachments/assets/d2cf9115-0ccb-4559-8d26-08af76407e35" />
 
 <img width="1258" height="649" alt="image" src="https://github.com/user-attachments/assets/8bb5180e-09a3-4bb0-9d56-a5aeb4e863e8" />
@@ -178,7 +174,7 @@ Important methods:
 
 Pointcuts determine which methods should be intercepted. A predicate expression for where advice should be applied.
 
-!image.png
+<img width="1401" height="550" alt="image" src="https://github.com/user-attachments/assets/984bbaaf-c47d-4651-9f8c-2ee7595dbb55" />
 
 Common expressions:
 
@@ -192,7 +188,7 @@ Common expressions:
 | `@annotation(org.springframework.transaction.annotation.Transactional)` | Methods annotated with Transactional |
 | `bean(orderService)` | Spring bean named orderService |
 
-!image.png
+<img width="1255" height="535" alt="image" src="https://github.com/user-attachments/assets/8e876557-0433-4958-b523-30bb51bb4498" />
 
 ### Reusable pointcut
 
@@ -274,7 +270,7 @@ There are two main proxy mechanisms:
 | Performance | Generally efficient | Generally efficient |
 | Java implementation | Built-in Proxy API | Bytecode generation |
 
-!image.png
+<img width="821" height="552" alt="image" src="https://github.com/user-attachments/assets/faa55337-28e2-4022-8bdf-d795befe453d" />
 
 Typical execution flow:
 
