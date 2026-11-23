@@ -1,3 +1,5 @@
+#### **Multithreading**
+
 Multithreading is the capability of a CPU (or a single process within an OS) to execute multiple threads concurrently. In Java, multithreading is managed primarily by the JVM, which maps Java threads to operating system kernel threads (or lightweight virtual threads in modern Java).
 
 Threads within the same process share:
@@ -836,6 +838,13 @@ Important:
 
 ### CompletableFuture
 
+Limitations of Future
+1. get() is blocking, so the calling thread waits for the result.
+2. No built-in mechanism to attach a callback when the task completes.
+3. Difficult to chain multiple asynchronous operations.
+4. Difficult to combine results from multiple futures.
+5. Limited exception-handling capabilities.
+
 `CompletableFuture` is useful for asynchronous programming and composing multiple operations.
 
 Example:
@@ -1157,6 +1166,8 @@ Always release the lock in `finally`.
 
 `ReentrantLock` provides functionality similar to `synchronized`, plus additional features.
 
+ReentrantLock is a locking mechanism provided by Java's java.util.concurrent.locks package. It is used to control access to shared resources and prevent multiple threads from modifying shared data simultaneously.
+
 ```java
 ReentrantLock lock=new ReentrantLock();
 lock.lock();
@@ -1439,6 +1450,10 @@ Timeout can prevent indefinite waiting.
 ### Livelock
 
 Threads aren't blocked, but they keep reacting to each other without making progress.
+
+Livelock is a concurrency problem in which two or more threads continuously respond to each other's actions but are unable to make progress.
+
+Unlike deadlock, threads are not blocked. They remain active, executing instructions, but the actual task never gets completed.
 
 Example:
 
